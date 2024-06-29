@@ -102,3 +102,11 @@
 /home/fabricio/Documentos/Programming/Csharp/BankMvc/obj/Debug/net8.0/BankMvc.pdb
 /home/fabricio/Documentos/Programming/Csharp/BankMvc/obj/Debug/net8.0/BankMvc.genruntimeconfig.cache
 /home/fabricio/Documentos/Programming/Csharp/BankMvc/obj/Debug/net8.0/ref/BankMvc.dll
+/home/fabricio/Documentos/Programming/Csharp/BankMvc/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/fabricio/Documentos/Programming/Csharp/BankMvc/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/fabricio/Documentos/Programming/Csharp/BankMvc/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/fabricio/Documentos/Programming/Csharp/BankMvc/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/home/fabricio/Documentos/Programming/Csharp/BankMvc/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/home/fabricio/Documentos/Programming/Csharp/BankMvc/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/home/fabricio/Documentos/Programming/Csharp/BankMvc/bin/Debug/net8.0/System.Security.Permissions.dll
+/home/fabricio/Documentos/Programming/Csharp/BankMvc/obj/Debug/net8.0/BankMvc.sourcelink.json

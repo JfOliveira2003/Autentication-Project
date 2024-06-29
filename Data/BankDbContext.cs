@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using BankMvc.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace BankMvc.Data;
 
