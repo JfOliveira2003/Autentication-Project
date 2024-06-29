@@ -3,9 +3,8 @@ using BankMvc.Models;
 using Microsoft.EntityFrameworkCore;
 namespace BankMvc.Data;
 
-public class BankDbContext : DbContext{
+public class BankDbContext : IdentityDbContext<Employee>{
     public DbSet<Employee> employee => Set<Employee>();
-    public DbSet<Account> account => Set<Account>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
