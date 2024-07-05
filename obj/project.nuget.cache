@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pJnwwAw+1C8uAaD9rKmCasE00icJjFqcsmdEhKKRaY3b4BnvDHVj7zB+tmdi8Gcid83XlFzD3zZhH1HaS5jPhQ==",
+  "dgSpecHash": "7IzMdMtqvd5L3EmUsnOUNlqQHFpMm7xqLZp+hzYb4Bryaa6dv8V3hZGVxaMHxai0Dai4B77g+OQgMnK40WptSw==",
   "success": true,
-  "projectFilePath": "/home/fabricio/Documentos/Programming/Csharp/BankMvc/BankMvc.csproj",
+  "projectFilePath": "/home/fabricio/Documentos/Programming/Csharp/Autentication-Project/BankMvc.csproj",
   "expectedPackageFiles": [
     "/home/fabricio/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/fabricio/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

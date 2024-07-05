@@ -3532,11 +3532,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/fabricio/Documentos/Programming/Csharp/BankMvc/BankMvc.csproj",
+      "projectUniqueName": "/home/fabricio/Documentos/Programming/Csharp/Autentication-Project/BankMvc.csproj",
       "projectName": "BankMvc",
-      "projectPath": "/home/fabricio/Documentos/Programming/Csharp/BankMvc/BankMvc.csproj",
+      "projectPath": "/home/fabricio/Documentos/Programming/Csharp/Autentication-Project/BankMvc.csproj",
       "packagesPath": "/home/fabricio/.nuget/packages/",
-      "outputPath": "/home/fabricio/Documentos/Programming/Csharp/BankMvc/obj/",
+      "outputPath": "/home/fabricio/Documentos/Programming/Csharp/Autentication-Project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/fabricio/.nuget/NuGet/NuGet.Config"
