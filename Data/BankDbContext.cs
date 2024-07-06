@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 namespace BankMvc.Data;
 
 public class BankDbContext : IdentityDbContext<Employee>{
+
+    public BankDbContext(DbContextOptions options) : base(options) {}
     public DbSet<Employee> employee => Set<Employee>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

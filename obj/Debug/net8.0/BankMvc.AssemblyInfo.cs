@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BankMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bac67ab25e300c56975720f6711ca3d0be98de6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92dc57f26eb0d594d8774239d1df949711f1b525")]
 [assembly: System.Reflection.AssemblyProductAttribute("BankMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BankMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

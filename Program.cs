@@ -1,4 +1,19 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using BankMvc.Data;
+using BankMvc.Models;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+//Adding the services to the container.
+builder.Services.AddRazorPages();
+
+var connectionString = builder.Configuration.GetConnectionString("StrConn") ?? throw new InvalidOperationException("Connection string 'BankDbContextConnection' not found.");
+
+builder.Services.AddDbContext<BankDbContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+builder.Services.AddDefaultIdentity<Employee>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<BankDbContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
