@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BankMvc.ViewModels;
 
-public class Register{
+public class RegisterVm{
     [Required]
     public string? Name {get;set;}
 

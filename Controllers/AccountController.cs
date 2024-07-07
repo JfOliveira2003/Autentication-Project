@@ -6,7 +6,6 @@ using System.Reflection.Metadata;
 
 namespace BankMvc.Controllers{
 
-
     public class AccountController : Controller{
         private readonly SignInManager<Employee> signInManager;
         private readonly UserManager<Employee> userManager;
@@ -41,7 +40,7 @@ namespace BankMvc.Controllers{
         }
 
         [HttpPost]
-        public async Task<IActionResult> RegisterAsync(Register model){
+        public async Task<IActionResult> RegisterAsync(RegisterVm model){
             if(ModelState.IsValid){
                 Employee user = new Employee(){
                     Name = model.Name,

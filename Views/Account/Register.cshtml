@@ -1,0 +1,44 @@
+@using BankMvc.ViewModels;
+@model RegisterVm
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Put your credentials:</h2>
+<div class="box">
+    <form asp-action="Register" method="post">
+        <div class="mb-1">
+            <label for="Name">Name</label>
+            <input asp-for="Name" type="text">
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div class="mb-1">
+            <label for="Email">Email</label>
+            <input asp-for="Email" type="text">
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div class="mb-1">
+            <label for="Address">Address</label>
+            <input asp-for="Address" type="text">
+            <span asp-validation-for="Address"></span>
+        </div>
+        <div class="mb-1">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="mb-1">
+            <label asp-for="ConfirmPassword">Confirm the Password</label>
+            <input asp-for="ConfirmPassword" type="password">
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <a asp-action="Login">Alredy have an account?</a>
+            </div>
+            <div class="col-4">
+                <input type="submit" value="Register" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>
