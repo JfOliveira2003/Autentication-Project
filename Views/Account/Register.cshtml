@@ -7,19 +7,20 @@
 <h2>Put your credentials:</h2>
 <div class="box">
     <form asp-action="Register" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="mb-1">
-            <label for="Name">Name</label>
-            <input asp-for="Name" type="text">
+            <label asp-for="Name" class="control-label">Name</label>
+            <input asp-for="Name" class="form-control">
             <span asp-validation-for="Name"></span>
         </div>
         <div class="mb-1">
-            <label for="Email">Email</label>
+            <label asp-for="Email">Email</label>
             <input asp-for="Email" type="text">
             <span asp-validation-for="Email"></span>
         </div>
         <div class="mb-1">
             <label for="Address">Address</label>
-            <input asp-for="Address" type="text">
+            <textarea asp-for="Address" class="form-control" rows="2"></textarea>
             <span asp-validation-for="Address"></span>
         </div>
         <div class="mb-1">

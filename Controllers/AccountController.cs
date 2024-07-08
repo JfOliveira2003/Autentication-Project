@@ -40,10 +40,12 @@ namespace BankMvc.Controllers{
         }
 
         [HttpPost]
-        public async Task<IActionResult> RegisterAsync(RegisterVm model){
+        public async Task<IActionResult> Register(RegisterVm model){
+            
             if(ModelState.IsValid){
                 Employee user = new Employee(){
                     Name = model.Name,
+                    UserName = model.Name,
                     Address = model.Address
 
                 };
