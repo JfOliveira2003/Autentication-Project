@@ -21,8 +21,21 @@
         <div class="mb-1 form-check">
             <label>
                 <input asp-for="RememberMe" /> @Html.DisplayFor(a => a.RememberMe)
-            </label>
-            
+            </label> 
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <a asp-action="Register">Do you not have an account yet?</a>
+            </div>
+            <div class="col-4">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
         </div>
     </form>
 </div>
+
+@section Scripts{
+    
+        await @Html.RenderPartialAsync("_ValidationScriptsPartial");
+    
+}

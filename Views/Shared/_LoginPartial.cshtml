@@ -7,6 +7,13 @@
             <a class="nav-link dropdown-toggle">
                 @User.Identity!.Name!
             </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                    <a class="dropdown-item" asp-action="Logout" asp-controller="Account">
+                        Logout
+                    </a>
+                </li>
+            </ul>
         </li>
     }else{
         <ul>

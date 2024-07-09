@@ -40,7 +40,7 @@ namespace BankMvc.Controllers{
         }
 
         [HttpPost]
-        public async Task<IActionResult> Register(RegisterVm model){
+        public async Task<IActionResult> Register(Register model){
             
             if(ModelState.IsValid){
                 Employee user = new Employee(){
@@ -63,6 +63,10 @@ namespace BankMvc.Controllers{
                 }
             }
             return View(model);
+        }
+        public async Task<IActionResult> Logout(){
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
