@@ -8,8 +8,6 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
-    string BaseUrl = "http://localhost:5155"
-
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
