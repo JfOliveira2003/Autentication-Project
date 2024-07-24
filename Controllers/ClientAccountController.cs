@@ -1,7 +1,12 @@
 
+using System.Net.Http.Headers;
+using System.Security.Permissions;
 using BankMvc.Data;
+using BankMvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Newtonsoft.Json;
 
 namespace BankMvc.Controllers
 {
@@ -9,6 +14,7 @@ namespace BankMvc.Controllers
     public class ClientAccountController : Controller
     {
         private readonly BankDbContext _context;
+        string baseUrl = "http://localhost:5155";
 
         public ClientAccountController(BankDbContext _context)
         {
@@ -56,8 +62,24 @@ namespace BankMvc.Controllers
                             Holder = Model.Holder,
                             Premium = Model.Premium
                         };
+                        var result = _context.Add(acc);
+                        await _context.SaveChangesAsync();
                         return RedirectToAction("Index", "Home");
+                    }
+                    else return RedirectToAction("Error", "Home");
                 }else return RedirectToAction("Error", "Home");
+            }
+
+            // if(ModelState.IsValid){
+            //     AccountClient acc = new AccountClient(){
+            //         Number = Model.Number,
+            //         Holder = Model.Holder,
+            //         Premium = Model.Premium
+            //     };
+            //     var result = _context.AddAsync(acc);
+            //     if(result.IsCompletedSuccessfully)
+            //     return RedirectToAction("Index", "Home");
+            // }else return RedirectToAction("Error", "Home");
         }
     }
 }

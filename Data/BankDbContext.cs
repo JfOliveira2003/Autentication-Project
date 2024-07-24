@@ -9,6 +9,7 @@ public class BankDbContext : IdentityDbContext<Employee>{
 
     public BankDbContext(DbContextOptions options) : base(options) {}
     public DbSet<Employee> employee => Set<Employee>();
+    public DbSet<AccountClient> accountClient => Set<AccountClient>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
